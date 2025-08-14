@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ADEDE, #4A90E2);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  color: #ffffff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+.clock-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.time {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: #eee;
+  letter-spacing: 1px;
+}
